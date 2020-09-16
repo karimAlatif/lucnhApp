@@ -615,7 +615,9 @@ a:-webkit-any-link:focus {
   padding:6px 0 3px
 }
 .osx-example .dock .dock-item img{
-  height:calc(100% - 4px - 2px)
+  height:calc(100% + 40px)
+  /* height:calc(100% - 4px - 2px) */
+
 }
 .osx-example .dock .dock-item .active-indicator{
   width:4px;
@@ -623,6 +625,10 @@ a:-webkit-any-link:focus {
   margin-top:2px;
   background-color:#444;
   border-radius:50%
+}
+.kopom{
+  width:4px;
+  height:4px;
 }
 .pokemon-example .dock .dock-item img,.social-example .dock .dock-item a,.social-example .dock .dock-item a img{
   height:100%

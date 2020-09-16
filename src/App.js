@@ -35,12 +35,12 @@ class App extends Component {
           <>
           <div className="app osx-example">
             <Dock 
-              width={Math.min(800, window.innerWidth * 0.5)}
+              width={Math.min(1000)}
               className="dock"
-              magnification={.7}
+              magnification={1}
               magnifyDirection="up"
               >
-              {["a", "b", "c", "d", "e", "f", "g"].map((item, index) => (
+              {["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"].map((item, index) => (
                 <Dock.Item 
                   key={index}
                   className="dock-item"
