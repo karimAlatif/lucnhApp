@@ -93,7 +93,8 @@ class Scene extends Component {
   initEnvironment () {
     // Init scene
     this.scene = new THREE.Scene();
-
+    this.scene.background = new THREE.Color( 0x000000 );
+    // 0xEBEBEB
     // Create a loading screen
     this.loadingManager = new THREE.LoadingManager();
     this.loadingManager.onProgress = function() {};
@@ -159,7 +160,7 @@ class Scene extends Component {
    let backgroundTexture = require("./assets/imgs/planets/stars.jpg");
 
    // Load planet texture /w atmosphere
-   var geometry = new THREE.SphereGeometry(210, 256, 256);
+   var geometry = new THREE.SphereGeometry(210, 240, 240);
 
    let earthShader = this.Shaders["earth"];
    let atmoShader = this.Shaders["atmosphere"];
@@ -184,7 +185,7 @@ class Scene extends Component {
 
    let earthmesh = new THREE.Mesh(geometry, material1);
    earthmesh.scale.set(1.2, 1.2, 1.2);
-   earthmesh.position.set(0, -230, 0);
+   earthmesh.position.set(0, -235, 0);
 
    this.scene.add(earthmesh);
 

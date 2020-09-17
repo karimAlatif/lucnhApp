@@ -609,7 +609,8 @@ a:-webkit-any-link:focus {
   background-size:cover
 }
 .osx-example .dock{
-  align-self:flex-end
+  align-self:flex-end;
+  margin-bottom: 30px;
 }
 .osx-example .dock .dock-item{
   padding:6px 0 3px
@@ -625,10 +626,6 @@ a:-webkit-any-link:focus {
   margin-top:2px;
   background-color:#444;
   border-radius:50%
-}
-.kopom{
-  width:4px;
-  height:4px;
 }
 .pokemon-example .dock .dock-item img,.social-example .dock .dock-item a,.social-example .dock .dock-item a img{
   height:100%
@@ -648,7 +645,8 @@ a:-webkit-any-link:focus {
 }
 .social-example .dock .dock-item{
   padding:24px 0 16px
-}.pokemon-example{
+}
+.pokemon-example{
   /* background-image:url(../images/pokemon/background.png); */
   background-color:#fff;
   background-repeat:repeat;
