@@ -136,38 +136,7 @@ class App extends Component {
               </div>
             </div>
           </div> 
-         
-          {/* 
-
-          <img
-            loading="lazy"
-            className="image"
-            style={{transform:"rotate(-115deg)", left:"23%", top:"58%"}} 
-            src= {"./icons/rec1.png"}
-            alt="Trulli"
-          ></img>
-          {/*  */}
-          {/* <img
-            loading="lazy"
-            className="image"
-            style={{transform:"rotate(25deg)", right:"35%", top:"5%"}} 
-            src= {"./icons/rec1.png"}
-            alt="Trulli"
-          ></img>
-          <img
-            loading="lazy"
-            className="image"
-            style={{transform:"rotate(65deg)", right:"23%", top:"27%"}} 
-            src= {"./icons/rec1.png"}
-            alt="Trulli"
-          ></img>
-          <img
-            loading="lazy"
-            className="image"
-            style={{transform:"rotate(115deg)", right:"23%", top:"58%"}} 
-            src= {"./icons/rec1.png"}
-            alt="Trulli"
-          ></img> */} */}
+        
 
           <div className="app osx-example">
             <Dock 
