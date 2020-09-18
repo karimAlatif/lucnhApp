@@ -33,6 +33,142 @@ class App extends Component {
           null
         ) : ( 
           <>
+          <div className="flip-card" style={{transform:"rotate(-25deg)", left:"35%", top:"5%"}} >
+            <div className="flip-card-inner">
+              <div className="flip-card-front">
+                <img 
+                  src={"./icons/rec1.png"}
+                  alt="Avatar"
+                  style={{width:"100%", height:"100%"}} 
+                >
+                </img>
+              </div>
+              <div className="flip-card-back">
+                <p
+                  style={{marginTop:"20%"}} 
+                >Text On Hover !</p> 
+              </div>
+            </div>
+          </div>
+          <div className="flip-card" style={{transform:"rotate(-65deg)", left:"23%", top:"27%"}} >
+            <div className="flip-card-inner">
+              <div className="flip-card-front">
+                <img 
+                  src={"./icons/rec1.png"}
+                  alt="Avatar"
+                  style={{width:"100%", height:"100%"}} 
+                >
+                </img>
+              </div>
+              <div className="flip-card-back">
+                <p
+                  style={{marginTop:"20%"}} 
+                >Text On Hover !</p> 
+              </div>
+            </div>
+          </div> 
+          <div className="flip-card" style={{transform:"rotate(-115deg)", left:"23%", top:"58%"}} >
+            <div className="flip-card-inner">
+              <div className="flip-card-front">
+                <img 
+                  src={"./icons/rec1.png"}
+                  alt="Avatar"
+                  style={{width:"100%", height:"100%"}} 
+                >
+                </img>
+              </div>
+              <div className="flip-card-back">
+                <p
+                  style={{marginTop:"20%"}} 
+                >Text On Hover !</p> 
+              </div>
+            </div>
+          </div> 
+         
+          <div className="flip-card" style={{transform:"rotate(25deg)", right:"35%", top:"5%"}} >
+            <div className="flip-card-inner">
+              <div className="flip-card-front">
+                <img 
+                  src={"./icons/rec1.png"}
+                  alt="Avatar"
+                  style={{width:"100%", height:"100%"}} 
+                >
+                </img>
+              </div>
+              <div className="flip-card-back">
+                <p
+                  style={{marginTop:"20%"}} 
+                >Text On Hover !</p> 
+              </div>
+            </div>
+          </div>
+          <div className="flip-card" style={{transform:"rotate(65deg)", right:"23%", top:"27%"}} >
+            <div className="flip-card-inner">
+              <div className="flip-card-front">
+                <img 
+                  src={"./icons/rec1.png"}
+                  alt="Avatar"
+                  style={{width:"100%", height:"100%"}} 
+                >
+                </img>
+              </div>
+              <div className="flip-card-back">
+                <p
+                  style={{marginTop:"20%"}} 
+                >Text On Hover !</p> 
+              </div>
+            </div>
+          </div> 
+          <div className="flip-card" style={{transform:"rotate(115deg)", right:"23%", top:"58%"}} >
+            <div className="flip-card-inner">
+              <div className="flip-card-front">
+                <img 
+                  src={"./icons/rec1.png"}
+                  alt="Avatar"
+                  style={{width:"100%", height:"100%"}} 
+                >
+                </img>
+              </div>
+              <div className="flip-card-back">
+                <p
+                  style={{marginTop:"20%"}} 
+                >Text On Hover !</p> 
+              </div>
+            </div>
+          </div> 
+         
+          {/* 
+
+          <img
+            loading="lazy"
+            className="image"
+            style={{transform:"rotate(-115deg)", left:"23%", top:"58%"}} 
+            src= {"./icons/rec1.png"}
+            alt="Trulli"
+          ></img>
+          {/*  */}
+          {/* <img
+            loading="lazy"
+            className="image"
+            style={{transform:"rotate(25deg)", right:"35%", top:"5%"}} 
+            src= {"./icons/rec1.png"}
+            alt="Trulli"
+          ></img>
+          <img
+            loading="lazy"
+            className="image"
+            style={{transform:"rotate(65deg)", right:"23%", top:"27%"}} 
+            src= {"./icons/rec1.png"}
+            alt="Trulli"
+          ></img>
+          <img
+            loading="lazy"
+            className="image"
+            style={{transform:"rotate(115deg)", right:"23%", top:"58%"}} 
+            src= {"./icons/rec1.png"}
+            alt="Trulli"
+          ></img> */} */}
+
           <div className="app osx-example">
             <Dock 
               width={Math.min(1000)}
@@ -54,7 +190,7 @@ class App extends Component {
               ))}
             </Dock>
           </div>
-            {/* <img className="title text-center" style={{width:"70%", height:"50%"}} src= {"https://media0.giphy.com/media/KeKT3mcAgZRcvTl7pe/giphy.gif"} alt="Trulli"></img> */}
+
             {/* <h1 className="title text-center">PROPETERRA</h1> */}
           </>
         )}

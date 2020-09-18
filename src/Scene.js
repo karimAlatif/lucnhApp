@@ -110,8 +110,8 @@ class Scene extends Component {
     // Init camera and perspective
     this.camera = new THREE.PerspectiveCamera(65, this.width / this.height, 1, 2000);
     this.camera.position.x = 0;
-    this.camera.position.y = 300;
-    this.camera.position.z = 200;
+    this.camera.position.y = 500;
+    this.camera.position.z = 600;
     this.camera.lookAt(this.scene.position);
 
     var listener = new THREE.AudioListener();
@@ -170,6 +170,7 @@ class Scene extends Component {
 
    e_uniforms["texture1"].value = THREE.ImageUtils.loadTexture(planetTexture);
    this.intensityPowerKey = e_uniforms["power"];
+   this.intensityPowerKey.value = 10;
 
   let material = new THREE.ShaderMaterial({
      uniforms: e_uniforms,
@@ -183,9 +184,9 @@ class Scene extends Component {
     map: THREE.ImageUtils.loadTexture(planetTexture),
   });
 
-   let earthmesh = new THREE.Mesh(geometry, material1);
+   let earthmesh = new THREE.Mesh(geometry, material);
    earthmesh.scale.set(1.2, 1.2, 1.2);
-   earthmesh.position.set(0, -235, 0);
+  //  earthmesh.position.set(0, -235, 0);
 
    this.scene.add(earthmesh);
 
@@ -200,10 +201,10 @@ class Scene extends Component {
    });
 
    
-  //  let atmoMesh = new THREE.Mesh(geometry, material);
-  //  atmoMesh.scale.set(1.5, 1.5, 1.5);
+   let atmoMesh = new THREE.Mesh(geometry, material);
+   atmoMesh.scale.set(1.37, 1.37, 1.37);
   //  atmoMesh.position.set(0, -350, 0);
-  //  this.scene.add(atmoMesh);
+   this.scene.add(atmoMesh);
 
    // Load background texture (cube)
    backgroundLoader.load(
@@ -241,8 +242,8 @@ class Scene extends Component {
     this.renderScene();
   }
   renderScene () {
-    this.alpha += 0.07;
-    this.intensityPowerKey.value = 5.5 + Math.cos(this.alpha) * -1 + -1;        
+    // this.alpha += 0.07;
+    // this.intensityPowerKey.value = 5.5 + Math.cos(this.alpha) * -1 + -1;        
     this.scene.rotation.y += 0.001;
     this.renderer.render(this.scene, this.camera);
   }

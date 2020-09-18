@@ -627,43 +627,11 @@ a:-webkit-any-link:focus {
   background-color:#444;
   border-radius:50%
 }
-.pokemon-example .dock .dock-item img,.social-example .dock .dock-item a,.social-example .dock .dock-item a img{
-  height:100%
-}
 .osx-example .dock .dock-background{
   background-color:#ccc;
   opacity:.6;
   border-radius:4px 4px 0 0;
   box-shadow:1px 1px 50px 4px rgba(0,0,0,.8)
-}
-.social-example{
-  /* background-image:url(../images/social/background.png); */
-  background-color:#00913f;background-repeat:repeat
-}
-.social-example .dock{
-  align-self:flex-start
-}
-.social-example .dock .dock-item{
-  padding:24px 0 16px
-}
-.pokemon-example{
-  /* background-image:url(../images/pokemon/background.png); */
-  background-color:#fff;
-  background-repeat:repeat;
-  animation:scroll 5s linear infinite
-}
-@keyframes scroll{from{background-position-y:0}to{background-position-y:-128px}}
-.pokemon-example .dock{
-  align-self:center
-}
-.pokemon-example .dock .dock-item{
-  padding:12px 0
-}
-.pokemon-example .dock .dock-background{
-  background-color:#fff;
-  border:4px solid #eb0000;
-  border-radius:10px;
-  box-shadow:0 0 50px 1px rgba(0,0,0,.6)
 }
 .debug-example{
   background-color:#333
@@ -732,22 +700,62 @@ a:-webkit-any-link:focus {
 .fork img{
   display:none
 }
-@media screen and (min-width:48em){
-  .fork img{
-    display:inherit;
-    position:absolute;
-    top:0;
-    right:0;
-    border:0
-  }
+
+.image {
+  width: 180px;
+  height:120px;
+  position: fixed;
+}
+
+.left {
+  left: 10% ;
+  top: 10%;
+}
+
+/* Card Style */
+.flip-card {
+  position: fixed;
+  background-color: transparent;
+  width: 180px;
+  height: 120px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
 }
 
 
- /* ========== RESPONSIVE ========== */
-
-/* vvvd */
-
-
+/* ========== RESPONSIVE ========== */
 
 @keyframes title {
   from {
@@ -796,6 +804,16 @@ a:-webkit-any-link:focus {
   to {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+
+@media screen and (min-width:48em){
+  .fork img{
+    display:inherit;
+    position:absolute;
+    top:0;
+    right:0;
+    border:0
   }
 }
 @media screen and (max-width: 1024px) {
