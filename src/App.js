@@ -33,11 +33,11 @@ class App extends Component {
           null
         ) : ( 
           <>
-          <div className="flip-card" style={{transform:"rotate(-25deg)", left:"35%", top:"5%"}} >
+          <div className="flip-card" style={{transform:"rotate(-25deg)", left:"38%", top:"7%"}} >
             <div className="flip-card-inner">
               <div className="flip-card-front">
                 <img 
-                  src={"./icons/rec1.png"}
+                  src={"./icons/globe.png"}
                   alt="Avatar"
                   style={{width:"100%", height:"100%"}} 
                 >
@@ -50,11 +50,11 @@ class App extends Component {
               </div>
             </div>
           </div>
-          <div className="flip-card" style={{transform:"rotate(-65deg)", left:"23%", top:"27%"}} >
+          <div className="flip-card" style={{transform:"rotate(-65deg)", left:"30%", top:"27%"}} >
             <div className="flip-card-inner">
               <div className="flip-card-front">
                 <img 
-                  src={"./icons/rec1.png"}
+                  src={"./icons/globe.png"}
                   alt="Avatar"
                   style={{width:"100%", height:"100%"}} 
                 >
@@ -67,11 +67,11 @@ class App extends Component {
               </div>
             </div>
           </div> 
-          <div className="flip-card" style={{transform:"rotate(-115deg)", left:"23%", top:"58%"}} >
+          <div className="flip-card" style={{transform:"rotate(-115deg)", left:"30%", top:"58%"}} >
             <div className="flip-card-inner">
               <div className="flip-card-front">
                 <img 
-                  src={"./icons/rec1.png"}
+                  src={"./icons/globe.png"}
                   alt="Avatar"
                   style={{width:"100%", height:"100%"}} 
                 >
@@ -85,11 +85,11 @@ class App extends Component {
             </div>
           </div> 
          
-          <div className="flip-card" style={{transform:"rotate(25deg)", right:"35%", top:"5%"}} >
+          <div className="flip-card" style={{transform:"rotate(25deg)", right:"38%", top:"8%"}} >
             <div className="flip-card-inner">
               <div className="flip-card-front">
                 <img 
-                  src={"./icons/rec1.png"}
+                  src={"./icons/globe.png"}
                   alt="Avatar"
                   style={{width:"100%", height:"100%"}} 
                 >
@@ -102,11 +102,11 @@ class App extends Component {
               </div>
             </div>
           </div>
-          <div className="flip-card" style={{transform:"rotate(65deg)", right:"23%", top:"27%"}} >
+          <div className="flip-card" style={{transform:"rotate(65deg)", right:"30%", top:"27%"}} >
             <div className="flip-card-inner">
               <div className="flip-card-front">
                 <img 
-                  src={"./icons/rec1.png"}
+                  src={"./icons/globe.png"}
                   alt="Avatar"
                   style={{width:"100%", height:"100%"}} 
                 >
@@ -119,11 +119,11 @@ class App extends Component {
               </div>
             </div>
           </div> 
-          <div className="flip-card" style={{transform:"rotate(115deg)", right:"23%", top:"58%"}} >
+          <div className="flip-card" style={{transform:"rotate(115deg)", right:"30%", top:"58%"}} >
             <div className="flip-card-inner">
               <div className="flip-card-front">
                 <img 
-                  src={"./icons/rec1.png"}
+                  src={"./icons/globe.png"}
                   alt="Avatar"
                   style={{width:"100%", height:"100%"}} 
                 >

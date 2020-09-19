@@ -68,7 +68,7 @@ class Scene extends Component {
           "varying vec3 vNormal;",
           "void main() {",
           "float intensity = pow( 0.8 - dot( vNormal, vec3( 0, 0, 1.0 ) ), 12.0 );",
-          "gl_FragColor = vec4( 2, 2, 2, 2 ) * intensity;",
+          "gl_FragColor = vec4( 0, 0, 0, 1 ) * intensity;",
           "}"
         ].join("\n")
       }
@@ -93,7 +93,7 @@ class Scene extends Component {
   initEnvironment () {
     // Init scene
     this.scene = new THREE.Scene();
-    this.scene.background = new THREE.Color( 0x000000 );
+    this.scene.background = new THREE.Color( 0xEBEBEB );
     // 0xEBEBEB
     // Create a loading screen
     this.loadingManager = new THREE.LoadingManager();
@@ -200,7 +200,6 @@ class Scene extends Component {
     transparent: true
    });
 
-   
    let atmoMesh = new THREE.Mesh(geometry, material);
    atmoMesh.scale.set(1.37, 1.37, 1.37);
   //  atmoMesh.position.set(0, -350, 0);
